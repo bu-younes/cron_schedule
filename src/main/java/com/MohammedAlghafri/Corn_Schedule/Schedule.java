@@ -140,6 +140,7 @@ public class Schedule {
     @Scheduled(cron = "0 30 16 ? 7,8 MON-FRI")
 
         // Problem 44: Write a CRON expression that runs a job at 12:00 AM on the first day of every quarter (January, April, July, and October).
+    @Scheduled(cron = "0 0 0 1 1,4,7,10 ?")
 
  //Problem 45: Write a CRON expression that runs a job at 8:00 AM every day, except for the last day of the month.
 
