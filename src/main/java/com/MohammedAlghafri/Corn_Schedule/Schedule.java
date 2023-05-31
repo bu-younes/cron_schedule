@@ -62,6 +62,7 @@ public class Schedule {
     @Scheduled(cron = "0 30 23 ? * FRI")
 
            // Problem 19: Write a CRON expression that runs a job every hour but only on even-numbered days of the month.
+    @Scheduled(cron = "0 0 * */2 * *")
 
            // Problem 20: Write a CRON expression that runs a job every 5 minutes but only between 9:00 AM and 6:00 PM on weekends.
 
