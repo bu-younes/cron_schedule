@@ -67,9 +67,28 @@ public class Schedule {
            // Problem 20: Write a CRON expression that runs a job every 5 minutes but only between 9:00 AM and 6:00 PM on weekends.
     @Scheduled(cron = "0 */5 9-18 * * SAT,SUN")
 
+ //Problem 21: Write a CRON expression that runs a job at 3:30 AM every day except Saturday and Sunday.
+    @Scheduled(cron = "0 30 3 * * MON-FRI")
 
+         //Problem 22: Write a CRON expression that runs a job at the top of every hour between 9:00 AM and 5:00 PM on the 15th day of the month.
 
-public void ScheduleTask(){
+        // Problem 23: Write a CRON expression that runs a job at 8:15 AM every weekday except Friday.
+
+         //Problem 24: Write a CRON expression that runs a job at 10:00 PM every day in the month of December.
+
+ //Problem 25: Write a CRON expression that runs a job at the bottom of every hour (i.e., at :00 and :30 minutes past the hour) between 6:00 PM and midnight on weekdays.
+
+         //Problem 26: Write a CRON expression that runs a job at 4:30 PM on the 1st and 15th days of every month.
+
+         //Problem 27: Write a CRON expression that runs a job every 10 minutes on weekdays between 9:00 AM and 5:00 PM.
+
+        // Problem 28: Write a CRON expression that runs a job at 12:00 PM on the 3rd Wednesday of every month.
+
+        // Problem 29: Write a CRON expression that runs a job at 10:00 PM every Sunday in the months of July, August, and September.
+
+ //Problem 30: Write a CRON expression that runs a job at 12:00 PM every day except Sunday in the month of July.
+
+ public void ScheduleTask(){
         System.out.println("Hello");
 
 
