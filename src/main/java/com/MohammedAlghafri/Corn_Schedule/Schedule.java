@@ -143,6 +143,7 @@ public class Schedule {
     @Scheduled(cron = "0 0 0 1 1,4,7,10 ?")
 
  //Problem 45: Write a CRON expression that runs a job at 8:00 AM every day, except for the last day of the month.
+    @Scheduled(cron = "0 0 8 1-30 * ?")
 
          //Problem 46: Write a CRON expression that runs a job every 2 hours between 10:00 PM and 6:00 AM.
 
