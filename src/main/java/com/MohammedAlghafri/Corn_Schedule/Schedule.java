@@ -56,8 +56,8 @@ public class Schedule {
     @Scheduled(cron = "0 0 * 1-15 * *")
 
             //Problem 17: Write a CRON expression that runs a job every 5 minutes on weekdays and every 15 minutes on weekends.
-    @Scheduled(cron = "0 */5 * * MON-FRI")
-    @Scheduled(cron = "0 */15 * * SAT,SUN")
+    @Scheduled(cron = "0 */5 * * * MON-FRI")
+    @Scheduled(cron = "0 0/15 * * * SAT,SUN")
             //Problem 18: Write a CRON expression that runs a job at 11:30 PM every Friday the 13th.
     @Scheduled(cron = "0 30 23 ? * FRI")
 
@@ -146,10 +146,10 @@ public class Schedule {
     @Scheduled(cron = "0 0 8 1-30 * ?")
 
          //Problem 46: Write a CRON expression that runs a job every 2 hours between 10:00 PM and 6:00 AM.
-    @Scheduled(cron = "0 0 22-6/2 * * ?")
+    @Scheduled(cron = "0 0 22-23,0-6/2 * * ?")
 
         // Problem 47: Write a CRON expression that runs a job at 1:30 PM on the second to last Friday of every month.
-    @Scheduled(cron = "0 30 13 ? * 6L-2")
+    @Scheduled(cron = "0 30 13 ? * 6")
 
        //  Problem 48: Write a CRON expression that runs a job at 5:30 PM on the first day of every month.
     @Scheduled(cron = "0 30 17 1 * ?")
