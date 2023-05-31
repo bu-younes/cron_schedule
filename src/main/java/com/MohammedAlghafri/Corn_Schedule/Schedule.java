@@ -149,6 +149,7 @@ public class Schedule {
     @Scheduled(cron = "0 0 22-6/2 * * ?")
 
         // Problem 47: Write a CRON expression that runs a job at 1:30 PM on the second to last Friday of every month.
+    @Scheduled(cron = "0 30 13 ? * 6L-2")
 
        //  Problem 48: Write a CRON expression that runs a job at 5:30 PM on the first day of every month.
 
