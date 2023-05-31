@@ -92,6 +92,7 @@ public class Schedule {
     @Scheduled(cron = "0 0 12 ? * 4#3")
 
         // Problem 29: Write a CRON expression that runs a job at 10:00 PM every Sunday in the months of July, August, and September.
+    @Scheduled(cron = "0 0 22 ? 7-9 SUN")
 
  //Problem 30: Write a CRON expression that runs a job at 12:00 PM every day except Sunday in the month of July.
 
