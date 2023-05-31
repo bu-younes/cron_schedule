@@ -77,6 +77,7 @@ public class Schedule {
     @Scheduled(cron = "0 15 8 * * MON-THU")
 
          //Problem 24: Write a CRON expression that runs a job at 10:00 PM every day in the month of December.
+    @Scheduled(cron = "0 0 22 * 12 *")
 
  //Problem 25: Write a CRON expression that runs a job at the bottom of every hour (i.e., at :00 and :30 minutes past the hour) between 6:00 PM and midnight on weekdays.
 
