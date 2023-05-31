@@ -130,6 +130,28 @@ public class Schedule {
     @Scheduled(cron = "0 0/30 * 15,L * ?")
 
 
+ //Problem 41: Write a CRON expression that runs a job at 12:00 PM on the first Monday of every month.
+    @Scheduled(cron = "0 0 12 ? * 2#1")
+
+ //Problem 42: Write a CRON expression that runs a job every 5 minutes on the first 10 days of January.
+
+        // Problem 43: Write a CRON expression that runs a job at 4:30 PM on weekdays in July and August.
+
+        // Problem 44: Write a CRON expression that runs a job at 12:00 AM on the first day of every quarter (January, April, July, and October).
+
+ //Problem 45: Write a CRON expression that runs a job at 8:00 AM every day, except for the last day of the month.
+
+         //Problem 46: Write a CRON expression that runs a job every 2 hours between 10:00 PM and 6:00 AM.
+
+        // Problem 47: Write a CRON expression that runs a job at 1:30 PM on the second to last Friday of every month.
+
+       //  Problem 48: Write a CRON expression that runs a job at 5:30 PM on the first day of every month.
+
+ //Problem 49: Write a CRON expression that runs a job at 3:00 AM on weekdays in the month of November.
+
+        // Problem 50: Write a CRON expression that runs a job every 10 minutes between 9:00 AM and 5:00 PM on weekdays.
+
+
 
 
  public void ScheduleTask(){
