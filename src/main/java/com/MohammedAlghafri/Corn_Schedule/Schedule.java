@@ -38,6 +38,7 @@ public class Schedule {
     @Scheduled(cron = "0 0 * 1 * *")
 
            // Problem 11: Write a CRON expression that runs a job every 30 minutes during business hours (8:00 A to 5:00 PM) on weekdays.
+    @Scheduled(cron = "0 0/30 8-17 * * MON-FRI")
 
     //Problem 12: Write a CRON expression that runs a job every hour on the 15th day of the month.
 
