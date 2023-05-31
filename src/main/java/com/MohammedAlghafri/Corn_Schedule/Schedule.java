@@ -7,16 +7,17 @@ import org.springframework.stereotype.Component;
 public class Schedule {
 
     //Problem 1: Write a CRON expression that runs a job every five minutes.
-   // @Scheduled(cron = "0 */5 * * * *")
+    @Scheduled(cron = "0 */5 * * * *")
 
 
     //Problem 2: Write a CRON expression that runs a job every hour.
-   // @Scheduled(cron = "0 0 * * * *")
+   @Scheduled(cron = "0 0 * * * *")
 
     //Problem 3: Write a CRON expression that runs a job every day at 2:30 PM.
     @Scheduled(cron = "0 30 14 * * *")
 
             //Problem 4: Write a CRON expression that runs a job every Monday at 8:00 AM.
+    @Scheduled(cron = "0 0 8 ? * MON")
 
             //Problem 5: Write a CRON expression that runs a job every month on the first day of the month at 3:00 AM.
 
