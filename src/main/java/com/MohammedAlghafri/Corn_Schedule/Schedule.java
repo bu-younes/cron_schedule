@@ -137,6 +137,7 @@ public class Schedule {
     @Scheduled(cron = "0 0/5 * 1 1-10 ?")
 
         // Problem 43: Write a CRON expression that runs a job at 4:30 PM on weekdays in July and August.
+    @Scheduled(cron = "0 30 16 ? 7,8 MON-FRI")
 
         // Problem 44: Write a CRON expression that runs a job at 12:00 AM on the first day of every quarter (January, April, July, and October).
 
