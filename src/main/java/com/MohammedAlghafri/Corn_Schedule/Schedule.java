@@ -95,6 +95,13 @@ public class Schedule {
     @Scheduled(cron = "0 0 22 ? 7-9 SUN")
 
  //Problem 30: Write a CRON expression that runs a job at 12:00 PM every day except Sunday in the month of July.
+    @Scheduled(cron = "0 0 12 ? 7 MON-SAT")
+
+
+
+
+
+
 
  public void ScheduleTask(){
         System.out.println("Hello");
